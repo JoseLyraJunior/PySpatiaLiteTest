@@ -17,7 +17,8 @@ Tested with versions:
 * SpatiaLite: mod_spatialite-4.3.0a-win-amd64
 
 ## Usage
+Launch IDLE from your Python distribution, then from it open PySpatialiteTest.py, and execute with F5.
 
+Edit the call to createGeoDB (last line in the PySpatialiteTest.py) and replace with your setup, if neeeded; first argument is path to the database relative to the script, and the second is path to the mod_spatialite.dll directory.
 
-Edit the last line in the PySpatialiteTest.py and replace with your setup.
-createGeoDB('./TestOut/pysqlitetest4.db', './SpatialiteBin/')
+It should create a spatially enabled 5,4 Mb sqlite database in TestOut directory.
