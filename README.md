@@ -1,6 +1,6 @@
 # SpatiaLite test on Python
 
-This example loads SpatiaLite extension and intializes spatially enabled SQLite database at the given location.
+This example loads SpatiaLite extension and intializes spatially enabled SQLite database at the given location. Then as a test, creates 100 thousand points, linestrings and polygons.
 
 Uses SQLite that comes with python 3. Loads SpatiaLite dll as typical SQLite 3 extension.
 
@@ -21,4 +21,5 @@ Launch IDLE from your Python distribution, then from it open PySpatialiteTest.py
 
 Edit the call to createGeoDB (last line in the PySpatialiteTest.py) and replace with your setup, if neeeded; first argument is path to the database relative to the script, and the second is path to the mod_spatialite.dll directory.
 
-It should create a spatially enabled 5,4 Mb sqlite database in TestOut directory.
+First, it should create a spatially enabled 5,4 Mb sqlite database in TestOut directory.
+Then, during test it should store several hundred thousand new entries, enlarging db up to 46 Mb.
