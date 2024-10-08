@@ -16,7 +16,7 @@ Tested with versions:
 
 * SpatiaLite: mod_spatialite-4.3.0a-win-amd64
 
-
+teste
 ## Usage
 Launch IDLE from your Python distribution, then from it open PySpatialiteTest.py, and execute with F5.
 
